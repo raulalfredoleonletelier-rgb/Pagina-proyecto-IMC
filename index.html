@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h1>Actividad 6: Índice de Masa Corporal (IMC)</h1>
+    <input id="Peso1" type="number" placeholder="Coloca El Peso">
+    <input id="Altura1" type="number" step="0.01" placeholder="Coloca La Altura">
+    <button onclick ="IMC()">COMPROBAR</button>
+    <p id="Resultado"></p>
+
+    <script>
+        function IMC() {
+            let Peso = Number(document.getElementById("Peso1").value);
+            let Altura = Number(document.getElementById("Altura1").value);
+
+            const IMC = Peso / (Altura * Altura);
+            const resultado = document.getElementById("Resultado");
+            resultado.innerHTML = `Tu IMC es: ${IMC.toFixed(2)}`;
+            if (IMC >= 18.5 && IMC < 24.9) {
+                document.getElementById("Resultado").innerText += " ES NORMAL ";
+            } else if (IMC >= 25) {
+                document.getElementById("Resultado").innerText += " ES ALTO";
+            } else {
+                document.getElementById("Resultado").innerText += " ES BAJO";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 1.4rem;
+    color: #0f172a;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Campos de entrada */
+input[type="number"] {
+    width: 100%;
+    max-width: 280px;
+    padding: 12px;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    text-align: center;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="number"]:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* Botón de cálculo */
+button {
+    width: 100%;
+    max-width: 280px;
+    padding: 12px;
+    margin-top: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Resultado */
+#Resultado {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0f172a;
+    margin-top: 24px;
+    text-align: center;
+    min-height: 1.5em;
+}
